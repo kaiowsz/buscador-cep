@@ -1,0 +1,98 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-theme {
+  background-color: white;
+}
+
+.header-theme {
+  color: rgb(17, 17, 17);
+}
+
+.search-theme {
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #f0f0f0;
+}
+
+.search {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-cep {
+  border: 0;
+  border-radius: 0 .4rem .4rem 0;
+  padding: .65rem;
+  cursor: pointer;
+  background-color: rgb(56, 56, 56);
+}
+
+
+#cep-input {
+  border: 1px solid rgb(51, 51, 51);
+  background-color: rgb(51, 51, 51);
+  color: rgb(209, 209, 209);
+  border-radius: .4rem 0 0 .4rem;
+  padding: 1.2rem;
+  outline: 0;
+}
+
+#cep-input::placeholder {
+  color: rgb(209, 209, 209);
+}
+
+.result {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-100px);
+  transition: all .6s;
+}
+
+.on {
+  transform: translateY(0px);
+}
+
+.off {
+  display: none;
+}
